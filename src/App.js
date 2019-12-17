@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './podaruk.png';
 import './App.css';
+import Container from 'react-bootstrap/Container'
+import Button from 'react-bootstrap/Button'
+import App1 from './App1'
+import ReactDOM from 'react-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="App">
+      <div className="App-header">
+        <Button  variant="light" className="btn1 decoration-none" onClick={() => ReactDOM.render(<App1 />, document.getElementById('root'))}><img src={logo} className="App-logo" alt="logo"/></Button>
+      </div>
+    </Container>
   );
 }
-
 export default App;
