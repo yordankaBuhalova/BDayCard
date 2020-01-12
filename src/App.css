@@ -43,7 +43,10 @@
 .cardstyle{
   background: no-repeat;
   background-image: url(card.png);
+  background-size:1000px ;
   background-position: center;
+  margin-left: 2em;
+  margin-right:4em ;
 
 }
 
