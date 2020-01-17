@@ -61,7 +61,10 @@ text-align: center;
   color: white;
 }
 
-
+.card{
+  font-family: 'Dancing Script', cursive;
+  font-weight: bolder;
+}
 
 @keyframes App-logo-spin {
   from {
